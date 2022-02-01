@@ -1,0 +1,10 @@
+div {
+  width: 100px;
+  height: 100px;
+  border: solid 1px black;
+}
+.allBoxes {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+}
