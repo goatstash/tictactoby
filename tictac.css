@@ -4,7 +4,16 @@ div {
   border: solid 1px black;
 }
 .allBoxes {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: 100px 100px 100px;
   grid-template-rows: 100px 100px 100px;
+  gap: 3px;
+  justify-items: center;
+}
+.playerNames {
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  max-width: 0 auto;
 }
