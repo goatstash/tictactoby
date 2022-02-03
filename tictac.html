@@ -12,32 +12,35 @@
   <body>
     <header>
       <section class="playerNames">
-        <h2 class="playerOne">PLAYER ONE</h2>
-        <h2 class="playerTwo">PLAYER TWO</h2>
-        <section class="scores">
-          <h2 class="playerOneScore"></h2>
-          <h2 class="playerTwoScore"></h2>
-        </section>
+        <h2 class="playerOne">
+          PLAYER ONE&nbsp;&nbsp;<span class="playerOneScore"></span>
+        </h2>
+        <h2 class="playerTwo">
+          PLAYER TWO&nbsp;&nbsp;<span class="playerTwoScore"></span>
+        </h2>
+        <section class="scores"></section>
       </section>
     </header>
     <main>
-      <form>
-        <section class="allBoxes">
-          <div class="box1"></div>
-          <div class="box2"></div>
-          <div class="box3"></div>
-          <div class="box4"></div>
-          <div class="box5"></div>
-          <div class="box6"></div>
-          <div class="box7"></div>
-          <div class="box8"></div>
-          <div class="box9"></div>
-        </section>
-      </form>
+      <section class="allBoxes">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+      </section>
+      <section class="buttons">
+        <button type="button" class="reset" onclick="resetGame()">
+          Reset Board
+        </button>
+      </section>
       <footer class="winner"></footer>
-      <button type="button" class="reset" onclick="resetGame()">
-        Reset Board
-      </button>
+      <button onclick="playSound()">Play</button>
+      <button onclick="stopSound()">Stop Sound</button>
       <script src="tictac.js"></script>
     </main>
   </body>

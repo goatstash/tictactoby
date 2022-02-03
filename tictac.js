@@ -27,6 +27,12 @@ var winner = document.querySelector(".winner");
 var boxes = document.querySelector(".allboxes");
 var resetButtonClick = document.querySelector(".reset");
 
+let playSound = () =>
+  new Audio(
+    "/Users/tobiasbedford/Documents/sei/project1/WOW HEAVEN.wav"
+  ).play();
+
+//Reset Game
 function resetGame() {
   box1.textContent = "";
   box2.textContent = "";
@@ -39,8 +45,9 @@ function resetGame() {
   box9.textContent = "";
   playerOne = "X";
   playerTwo = "O";
+  winner.textContent = "";
 }
-
+//Toggle Players
 function clickBoxPlayer(event) {
   if (activePlayer === playerOne) {
     var boxClicked = event.target;
@@ -55,20 +62,17 @@ function clickBoxPlayer(event) {
       activePlayer = playerTwo;
 
       console.log("one");
-
-      //Player One winning combinations
     }
-
+    //Player One winning combinations
     function playerOneWin() {
       if (
-        box1.textContent === playerOne &&
-        box2.textContent === playerOne &&
+        (box1.textContent === playerOne) & (box2.textContent === playerOne) &&
         box3.textContent === playerOne
       ) {
         playeronewins = true;
         playertwowins = false;
         winner.textContent = "Player One Wins";
-        playerOneScoreboard.textContent = playerOneScore + 1;
+        playerOneScoreboard.textContent = playerOneScore += 1;
         console.log("Player One Wins!");
       } else if (
         box1.textContent === playerOne &&
@@ -78,6 +82,7 @@ function clickBoxPlayer(event) {
         playeronewins = true;
         playertwowins = false;
         winner.textContent = "Player One Wins";
+        playerOneScoreboard.textContent = playerOneScore += 1;
 
         console.log("Player One Wins!");
       } else if (
@@ -88,7 +93,7 @@ function clickBoxPlayer(event) {
         playeronewins = true;
         playertwowins = false;
         winner.textContent = "Player One Wins";
-
+        playerOneScoreboard.textContent = playerOneScore += 1;
         console.log("Player One Wins!");
       } else if (
         box2.textContent === playerOne &&
@@ -98,7 +103,7 @@ function clickBoxPlayer(event) {
         playeronewins = true;
         playertwowins = false;
         winner.textContent = "Player One Wins";
-
+        playerOneScoreboard.textContent = playerOneScore += 1;
         console.log("Player One Wins!");
       } else if (
         box3.textContent === playerOne &&
@@ -108,7 +113,7 @@ function clickBoxPlayer(event) {
         playeronewins = true;
         playertwowins = false;
         winner.textContent = "Player One Wins";
-
+        playerOneScoreboard.textContent = playerOneScore += 1;
         console.log("Player One Wins!");
       } else if (
         box3.textContent === playerOne &&
@@ -118,7 +123,7 @@ function clickBoxPlayer(event) {
         playeronewins = true;
         playertwowins = false;
         winner.textContent = "Player One Wins";
-
+        playerOneScoreboard.textContent = playerOneScore += 1;
         console.log("Player One Wins!");
       } else if (
         box4.textContent === playerOne &&
@@ -128,7 +133,7 @@ function clickBoxPlayer(event) {
         playeronewins = true;
         playertwowins = false;
         winner.textContent = "Player One Wins";
-
+        playerOneScoreboard.textContent = playerOneScore += 1;
         console.log("Player One Wins!");
       } else if (
         box7.textContent === playerOne &&
@@ -138,10 +143,11 @@ function clickBoxPlayer(event) {
         playeronewins = true;
         playertwowins = false;
         winner.textContent = "Player One Wins";
-
+        playerOneScoreboard.textContent = playerOneScore += 1;
         console.log("Player One Wins!");
       }
     }
+    //Turn Toggle continued..
     playerOneWin();
   } else if (activePlayer === playerTwo) {
     var boxClicked = event.target;
@@ -168,7 +174,7 @@ function clickBoxPlayer(event) {
       playertwowins = true;
       playeronewins = false;
       winner.textContent = "Player Two Wins";
-
+      playerTwoScoreboard.textContent = playerTwoScore += 1;
       console.log("Player Two Wins!");
     } else if (
       box1.textContent === playerTwo &&
@@ -178,7 +184,7 @@ function clickBoxPlayer(event) {
       playertwowins = true;
       playeronewins = false;
       winner.textContent = "Player Two Wins";
-
+      playerTwoScoreboard.textContent = playerTwoScore += 1;
       console.log("Player Two Wins!");
     } else if (
       box1.textContent === playerTwo &&
@@ -188,7 +194,7 @@ function clickBoxPlayer(event) {
       playertwowins = true;
       playeronewins = false;
       winner.textContent = "Player Two Wins";
-
+      playerTwoScoreboard.textContent = playerTwoScore += 1;
       console.log("Player Two Wins!");
     } else if (
       box2.textContent === playerTwo &&
@@ -198,7 +204,7 @@ function clickBoxPlayer(event) {
       playertwowins = true;
       playeronewins = false;
       winner.textContent = "Player Two Wins";
-
+      playerTwoScoreboard.textContent = playerTwoScore += 1;
       console.log("Player Two Wins!");
     } else if (
       box3.textContent === playerTwo &&
@@ -208,7 +214,7 @@ function clickBoxPlayer(event) {
       playertwowins = true;
       playeronewins = false;
       winner.textContent = "Player Two Wins";
-
+      playerTwoScoreboard.textContent = playerTwoScore += 1;
       console.log("Player Two Wins!");
     } else if (
       box3.textContent === playerTwo &&
@@ -218,7 +224,7 @@ function clickBoxPlayer(event) {
       playertwowins = true;
       playeronewins = false;
       winner.textContent = "Player Two Wins";
-
+      playerTwoScoreboard.textContent = playerTwoScore += 1;
       console.log("Player Two Wins!");
     } else if (
       box4.textContent === playerTwo &&
@@ -228,7 +234,7 @@ function clickBoxPlayer(event) {
       playertwowins = true;
       playeronewins = false;
       winner.textContent = "Player Two Wins";
-
+      playerTwoScoreboard.textContent = playerTwoScore += 1;
       console.log("Player Two Wins!");
     } else if (
       box7.textContent === playerTwo &&
@@ -238,10 +244,11 @@ function clickBoxPlayer(event) {
       playertwowins = true;
       playeronewins = false;
       winner.textContent = "Player Two Wins";
-
+      playerTwoScoreboard.textContent = playerTwoScore += 1;
       console.log("Player Two Wins!");
     }
   }
+  //Draw Function
   playerTwoWin();
   function draw() {
     if (
@@ -263,7 +270,25 @@ function clickBoxPlayer(event) {
     }
   }
   draw();
-}
 
+  //Wipes Board if someone wins
+  function wipeBoard() {
+    if (playeronewins === true || playertwowins === true) {
+      console.log("ithappened");
+      box1.textContent = "";
+      box2.textContent = "";
+      box3.textContent = "";
+      box4.textContent = "";
+      box5.textContent = "";
+      box6.textContent = "";
+      box7.textContent = "";
+      box8.textContent = "";
+      box9.textContent = "";
+      playeronewins = false;
+      playertwowins = false;
+    }
+  }
+  wipeBoard();
+}
 var allBoxes = document.querySelector(".allBoxes");
 allBoxes.addEventListener("click", clickBoxPlayer);
