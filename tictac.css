@@ -29,7 +29,8 @@ body {
   background-image: url("https://i.pinimg.com/originals/1b/ff/68/1bff68e01ff5e6a01b9c405a69bac8bb.jpg");
 }
 html {
-  font-family: "Graffiti font", sans-serif;
+  font-family: "Graffiti font", "Graffiti Street", "Permanent Marker",
+    sans-serif;
 }
 .box1,
 .box2,

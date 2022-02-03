@@ -27,10 +27,7 @@ var winner = document.querySelector(".winner");
 var boxes = document.querySelector(".allboxes");
 var resetButtonClick = document.querySelector(".reset");
 
-let playSound = () =>
-  new Audio(
-    "/Users/tobiasbedford/Documents/sei/project1/WOW HEAVEN.wav"
-  ).play();
+let playSound = () => new Audio("./WOW HEAVEN.wav").play();
 
 //Reset Game
 function resetGame() {
