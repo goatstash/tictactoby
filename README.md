@@ -1,6 +1,9 @@
-#Tic Tac Toeby
+# Tic Tac Toeby
+
 Tic Tac Toeby is a basic version of a classic game set on the wall of a public bathroom.
-##Approach to problem (planning)
+
+## Approach to problem (planning)
+
 Initial I started creatin 9 divs to represent the board and writing some basic css code to build a framework for the game.
 
 My Javascript approach to the problem started with toggling between players.
@@ -14,18 +17,21 @@ The fourth step in Javascript was adding a scoreboard variable that would count 
 
 The fifth step was creating a reset button that would listen for a click and wipe the board when clicked. It also wipes the "Player has won" message from the board.
 
-##Tech Used
+## Tech Used
+
 I used an image of a wall covered in graffiti found on the internet
 font-family" 'Grafitti font'
 I've added a song that a friend and I produced that has is repeatetively looped.
 
-##Lessons learnt
+## Lessons learnt
+
 Too many lines of code makes trouble shooting difficult, readability is not great.
 Using a count system to toggle between players would have been better.
 == does not equal but compares.
 When help wasn't available and I was mentally blocked I should have spent time on design and stepped away from the problem.
 
-##Future features if I had more time
+## Future features if I had more time
+
 I have a stop button to stop the music that isn't functional.
 A multi layered scored board where it's first player to eleven and win by two and then win eleven sets by two.
 For interactive design with hover features, a broken lightbulb faintly flashing.
